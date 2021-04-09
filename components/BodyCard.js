@@ -15,7 +15,7 @@ const BodyCard = ({ title, description, maxNum, ImageRoute, btnText }) => {
         <Button variant='primary' onClick={() => setModalShow(true)}>
           {btnText}
         </Button>
-        <ModalBox show={modalShow} onHide={() => setModalShow(false)} />
+        <ModalBox show={modalShow} onHide={() => setModalShow(false)} title={title} />
       </Card.Body>
     </Card>
   )
@@ -26,7 +26,7 @@ BodyCard.defaultProps = {
   description: 'A description of the space',
   maxNum: 20,
   ImageRoute: '/workspace0.jpg',
-  btnText: 'Reserve Space',
+  btnText: 'Space Summary',
 }
 
 BodyCard.propTypes = {

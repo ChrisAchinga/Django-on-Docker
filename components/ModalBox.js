@@ -1,4 +1,4 @@
-import { Modal, Button } from 'react-bootstrap'
+import { Modal, Button, Container, Alert } from 'react-bootstrap'
 
 const ModalBox = (props) => {
   return (
@@ -10,18 +10,26 @@ const ModalBox = (props) => {
     >
       <Modal.Header closeButton>
         <Modal.Title id='contained-modal-title-vcenter'>
-          Modal heading
+          Communtiy Space
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+        <h4>{props.title}</h4>
+        <Container>
+          <Alert variant='success'>
+            <Alert.Heading>Status: Available</Alert.Heading>
+            <p>
+              12 People Remaining
+            </p>
+            <hr />
+            <p className='mb-0'>
+              Space Available for Booking | COVID-19 Protocols Observed
+            </p>
+          </Alert>
+        </Container>
       </Modal.Body>
       <Modal.Footer>
+      <Button variant="secondary">Book Space</Button>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
