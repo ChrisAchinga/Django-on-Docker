@@ -5,9 +5,9 @@ const Body = () => {
   return (
     <Container className='mt-5'>
       <Row>
-        <Col md={4}><BodyCard /></Col>
-        <Col md={4}><BodyCard /></Col>
-        <Col md={4}><BodyCard /></Col>
+        <Col md={4} className='p-2'><BodyCard /></Col>
+        <Col md={4} className='p-2'><BodyCard /></Col>
+        <Col md={4} className='p-2'><BodyCard /></Col>
       </Row>
     </Container>
   )
