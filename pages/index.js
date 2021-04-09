@@ -12,7 +12,7 @@ export default function Home() {
         <title>Community Space</title>
         <link rel='icon' href='/favicon.ico' />
         {/* <meta name="description" content={description} /> */}
-      {/* <meta property="og:type" content="website" />
+        {/* <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={siteTitle} />
@@ -27,7 +27,7 @@ export default function Home() {
         <Container>
           <Header
             title='Community Space'
-            description='Book or Reserve a Space'
+            description='Book or Reserve a Space | Swahilipot Hub'
           />
           <Body />
         </Container>
