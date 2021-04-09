@@ -10,6 +10,7 @@ const Body = () => {
             title='Social Hall'
             description='Medium sized hall for events and functions and even trainings'
             maxNum={40}
+            RemainingNum={30}
             ImageRoute='/hall.jpg'
           />
         </Col>
@@ -18,6 +19,7 @@ const Body = () => {
             title='Working Space'
             description='A Communty space with a condusive work environment for your personal work/stuff'
             maxNum={15}
+            RemainingNum={1}
             ImageRoute='/workspace0.jpg'
           />
         </Col>
@@ -26,6 +28,7 @@ const Body = () => {
             title='BoardRoom'
             description='A Place to hold your coporate meetings and events'
             maxNum={8}
+            RemainingNum={0}
             ImageRoute='/boardroom0.jpg'
           />
         </Col>
