@@ -18,7 +18,7 @@ const ModalBox = (props) => {
         <Container>
           <Alert variant={props.RemainingNum === 0 ? 'danger' : 'success'}>
             <Alert.Heading>
-              Status: {props.RemainingNum === 0 ? 'Fully Booked' : 'Available'}
+              Status(Availability for the next 24hrs): {props.RemainingNum === 0 ? 'Fully Booked' : 'Available'}
             </Alert.Heading>
             <p>
               {props.RemainingNum} People Remaining (Maximum: {props.maxNum}{' '}
