@@ -16,21 +16,28 @@ const ModalBox = (props) => {
       <Modal.Body>
         <h4>{props.title}</h4>
         <Container>
-          <Alert variant='success'>
-            <Alert.Heading>Status: Available</Alert.Heading>
+          <Alert variant={props.RemainingNum === 0 ? 'danger' : 'success'}>
+            <Alert.Heading>
+              Status: {props.RemainingNum === 0 ? 'Fully Booked' : 'Available'}
+            </Alert.Heading>
             <p>
-              12 People Remaining (Maximum: {props.maxNum} people)
+              {props.RemainingNum} People Remaining (Maximum: {props.maxNum}{' '}
+              people)
             </p>
             <hr />
             <p className='mb-0'>
-              Space Available for Booking | COVID-19 Protocols Observed
+              {props.RemainingNum === 0 ? 'Community Space Fully Booked' : 'Space Available for Booking'} | COVID-19 Protocols Observed
             </p>
           </Alert>
         </Container>
       </Modal.Body>
       <Modal.Footer>
-      <Button variant="secondary">Book Space</Button>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button variant='secondary' disabled={props.RemainingNum === 0}>
+          Book Space
+        </Button>
+        <Button onClick={props.onHide} variant='danger'>
+          Close
+        </Button>
       </Modal.Footer>
     </Modal>
   )
