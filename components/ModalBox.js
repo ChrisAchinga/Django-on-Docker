@@ -19,7 +19,7 @@ const ModalBox = (props) => {
           <Alert variant='success'>
             <Alert.Heading>Status: Available</Alert.Heading>
             <p>
-              12 People Remaining
+              12 People Remaining (Maximum: {props.maxNum} people)
             </p>
             <hr />
             <p className='mb-0'>

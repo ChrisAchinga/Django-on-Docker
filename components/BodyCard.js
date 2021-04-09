@@ -15,7 +15,7 @@ const BodyCard = ({ title, description, maxNum, ImageRoute, btnText }) => {
         <Button variant='primary' onClick={() => setModalShow(true)}>
           {btnText}
         </Button>
-        <ModalBox show={modalShow} onHide={() => setModalShow(false)} title={title} />
+        <ModalBox show={modalShow} onHide={() => setModalShow(false)} title={title} maxNum={maxNum}/>
       </Card.Body>
     </Card>
   )
