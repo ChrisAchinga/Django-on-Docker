@@ -11,15 +11,20 @@ export default function Home() {
       <Head>
         <title>Community Space</title>
         <link rel='icon' href='/favicon.ico' />
-        {/* <meta name="description" content={description} /> */}
-        {/* <meta property="og:type" content="website" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:site_name" content={siteTitle} />
-      <meta property="twitter:card" content="summary" />
-      <meta property="twitter:creator" content={config.social.twitter} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} /> */}
+        <meta
+          property='og:url'
+          content='https://community-space.netlify.app/'
+        />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content='Community Space' />
+        <meta
+          property='og:description'
+          content='Reserve your spot at your community space to help control covid-19 spread'
+        />
+        <meta
+          property='og:image'
+          content='https://source.unsplash.com/6bKpHAun4d8'
+        />
       </Head>
 
       <Menu />
