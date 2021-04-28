@@ -1,12 +1,12 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import BodyCard from '@components/BodyCard'
+import SpaceCard from '@components/SpaceCard'
 
-const Body = () => {
+const Space = () => {
   return (
     <Container className='mt-5'>
       <Row>
         <Col md={4} className='p-2'>
-          <BodyCard
+          <SpaceCard
             title='Social Hall'
             description='Medium sized hall for events and functions and even trainings'
             maxNum={40}
@@ -15,7 +15,7 @@ const Body = () => {
           />
         </Col>
         <Col md={4} className='p-2'>
-          <BodyCard
+          <SpaceCard
             title='Working Space'
             description='A Communty space with a condusive work environment for your personal work/stuff'
             maxNum={15}
@@ -24,7 +24,7 @@ const Body = () => {
           />
         </Col>
         <Col md={4} className='p-2'>
-          <BodyCard
+          <SpaceCard
             title='BoardRoom'
             description='A Place to hold your coporate meetings and events'
             maxNum={8}
@@ -37,4 +37,4 @@ const Body = () => {
   )
 }
 
-export default Body
+export default Space

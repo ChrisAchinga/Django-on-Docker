@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Card, Button } from 'react-bootstrap'
 import ModalBox from '@components/ModalBox'
 
-const BodyCard = ({ title, description, maxNum, ImageRoute, btnText, RemainingNum }) => {
+const SpaceCard = ({ title, description, maxNum, ImageRoute, btnText, RemainingNum }) => {
   const [modalShow, setModalShow] = useState(false)
   return (
     <Card>
@@ -21,7 +21,7 @@ const BodyCard = ({ title, description, maxNum, ImageRoute, btnText, RemainingNu
   )
 }
 
-BodyCard.defaultProps = {
+SpaceCard.defaultProps = {
   title: 'Space Title',
   description: 'A description of the space',
   maxNum: 20,
@@ -29,10 +29,10 @@ BodyCard.defaultProps = {
   btnText: 'Space Summary',
 }
 
-BodyCard.propTypes = {
+SpaceCard.propTypes = {
   maxNum: PropTypes.number,
   title: PropTypes.string,
   description: PropTypes.string,
 }
 
-export default BodyCard
+export default SpaceCard

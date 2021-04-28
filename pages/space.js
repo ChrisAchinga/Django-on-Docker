@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap'
+import Space from '@components/Space'
 import Layout from '@layouts/Layuout'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <Layout title={title} description={description}>
       <main>
         <Container>
+          <Space />
         </Container>
       </main>
     </Layout>
