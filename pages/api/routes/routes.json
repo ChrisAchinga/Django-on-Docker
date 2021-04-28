@@ -3,82 +3,92 @@
     {
       "id": "1",
       "page": "landing",
-      "route": "/"
+      "path": "/",
+      "status": "development"
     },
     {
       "id": "2",
       "page": "about",
-      "route": "/about"
+      "path": "/about",
+      "status": "not-ready"
     },
     {
       "id": "3",
       "page": "contact",
-      "route": "/contact"
+      "path": "/contact",
+      "status": "not-ready"
     },
     {
       "id": "4",
       "page": "membership",
-      "route": "/membership"
+      "path": "/membership",
+      "status": "not-ready"
     },
     {
       "id": "5",
       "page": "sitemap",
-      "route": "/sitemap"
+      "path": "/sitemap",
+      "status": "running"
     },
     {
       "id": "6",
       "page": "changemakers",
-      "route": "/changemakers"
+      "path": "/changemakers",
+      "status": "not-ready"
     },
     {
       "id": "7",
       "page": "events",
-      "route": "/events"
+      "path": "/events",
+      "status": "not-ready"
     },
     {
       "id": "8",
       "page": "gallery",
-      "route": "/gallery"
+      "path": "/gallery",
+      "status": "not-ready"
     },
     {
       "id": "9",
       "page": "images",
-      "route": "/gallery/images"
+      "path": "/gallery/images",
+      "status": "not-ready"
     },
     {
       "id": "10",
       "page": "videos",
-      "route": "/gallery/videos"
-    },
-    {
-      "id": "11",
-      "page": "",
-      "route": ""
+      "path": "/gallery/videos",
+      "status": "not-ready"
     },
     {
       "id": "12",
       "page": "news",
-      "route": "/news"
+      "path": "/news",
+      "status": "not-ready"
     },
     {
       "id": "13",
       "page": "all programs",
-      "route": "/programs"
+      "path": "/programs",
+      "status": "not-ready"
     },
     {
       "id": "14",
       "page": "art programs",
-      "route": "/programs/art"
+      "path": "/programs/art",
+      "status": "not-ready"
     },
     {
       "id": "15",
       "page": "tech programs",
-      "route": "/programs/tech"
+      "path": "/programs/tech",
+      "status": "not-ready"
     },
     {
       "id": "16",
       "page": "team and leaders",
-      "route": "/team"
+      "path": "/team",
+      "status": "not-ready"
     }
   ]
 }

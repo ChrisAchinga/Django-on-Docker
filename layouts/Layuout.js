@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {Container} from 'react-bootstrap'
 import HeroSection from '@components/HeroSection'
 import Menu from '@components/Menu'
 import Footer from '@components/Footer'
@@ -24,7 +25,9 @@ export default function Home({ title, description, children }) {
       <Menu />
       <main>
         <HeroSection />
+        <Container>
         {children}
+        </Container>
       </main>
       <Footer />
     </div>
