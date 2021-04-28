@@ -24,7 +24,7 @@ const HeroSection = ({ title, description }) => {
           </p>
           <div className='d-grid gap-2 d-md-flex justify-content-md-start'>
             <Button className='btn-primary btn-lg px-4 me-md-2'>Events</Button>
-            <Button className='btn-outline-secondary btn-lg px-4'>
+            <Button className='btn-secondary btn-lg px-4'>
               Space
             </Button>
           </div>
