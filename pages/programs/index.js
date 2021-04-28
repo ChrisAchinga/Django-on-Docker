@@ -1,8 +1,8 @@
 import Layout from '@layouts/Layuout'
 
-const Home = () => {
-  const title = 'Home Page'
-  const description = 'Swahilipot Hub is a tech and art hub for the community'
+const Programs = () => {
+  const title = 'Our Programs'
+  const description = 'Programs'
   return (
     <Layout title={title} description={description}>
       <main>{title}</main>
@@ -10,4 +10,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Programs
