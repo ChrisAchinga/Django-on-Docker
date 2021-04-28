@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "id": "1",
+      "page": "landing",
+      "route": "/"
+    },
+    {
+      "id": "2",
+      "page": "about",
+      "route": "/about"
+    },
+    {
+      "id": "3",
+      "page": "contact",
+      "route": "/contact"
+    },
+    {
+      "id": "4",
+      "page": "membership",
+      "route": "/membership"
+    },
+    {
+      "id": "5",
+      "page": "sitemap",
+      "route": "/sitemap"
+    },
+    {
+      "id": "6",
+      "page": "changemakers",
+      "route": "/changemakers"
+    },
+    {
+      "id": "7",
+      "page": "events",
+      "route": "/events"
+    },
+    {
+      "id": "8",
+      "page": "gallery",
+      "route": "/gallery"
+    },
+    {
+      "id": "9",
+      "page": "images",
+      "route": "/gallery/images"
+    },
+    {
+      "id": "10",
+      "page": "videos",
+      "route": "/gallery/videos"
+    },
+    {
+      "id": "11",
+      "page": "",
+      "route": ""
+    },
+    {
+      "id": "12",
+      "page": "news",
+      "route": "/news"
+    },
+    {
+      "id": "13",
+      "page": "all programs",
+      "route": "/programs"
+    },
+    {
+      "id": "14",
+      "page": "art programs",
+      "route": "/programs/art"
+    },
+    {
+      "id": "15",
+      "page": "tech programs",
+      "route": "/programs/tech"
+    },
+    {
+      "id": "16",
+      "page": "team and leaders",
+      "route": "/team"
+    }
+  ]
+}
