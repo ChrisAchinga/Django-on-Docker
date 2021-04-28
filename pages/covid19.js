@@ -1,27 +1,11 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Menu from '@components/Menu'
-import Footer from '@components/Footer'
-import { Container } from 'react-bootstrap'
+import Layout from '@layouts/Layuout'
 
 const covid19 = () => {
   return (
-    <>
-      <Head>
-        <title>Covid-19</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Menu />
-      <main>
-        <Container>
-          <Header
-            title='Community Space'
-            description='Book or Reserve a Space | Swahilipot Hub'
-          />
-        </Container>
-      </main>
-      <Footer />
-    </>
+    <Layout
+      title='CoVid19'
+      description='Sfatey and precautions when visiting our space'
+    ></Layout>
   )
 }
 

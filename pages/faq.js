@@ -1,26 +1,13 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Menu from '@components/Menu'
-import Footer from '@components/Footer'
+import Layout from '@layouts/Layuout'
+import Header from '@components/HeroSection'
 import { Container, Accordion, Card } from 'react-bootstrap'
 
 const faq = () => {
   let descriptionText =
     'Morbi blandit aptent. Cursus habitant sociis proin ut natoque cubilia habitasse. At. Maecenas felis convallis platea neque litora malesuada dis parturient dapibus. Sociis Platea adipiscing. Suspendisse mollis. Senectus aliquam inceptos Maecenas semper natoque est inceptos fames condimentum potenti vestibulum aptent pharetra curabitur lacus nam ultricies lacus morbi vel feugiat libero.'
   return (
-    <>
-      <Head>
-        <title>FAQ | Community Space</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Menu />
-      <main>
+    <Layout title='Community Space Facts and FAQs' description='Our way of life and common asked questions'>
         <Container>
-          <Header
-            title='Frequently Asked Questions about Community Space'
-            description='Booking or Reserving a space at Swahilipot Hub'
-          />
-
           <div>
             <Accordion defaultActiveKey='0'>
               <div className='accordion-item'>
@@ -33,8 +20,8 @@ const faq = () => {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey='0'>
                   <div className='accordion-body'>
-                    <strong>Reserving a community space</strong> 
-                    
+                    <strong>Reserving a community space</strong>
+
                     <hr />
                     {descriptionText}
                   </div>
@@ -107,9 +94,7 @@ const faq = () => {
             </Accordion>
           </div>
         </Container>
-      </main>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 
