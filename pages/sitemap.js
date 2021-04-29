@@ -15,12 +15,13 @@ const Sitemap = ({ routes }) => {
           {routes.map((rte) => (
             <div
               key={rte.id}
-              className='container list-group-item list-group-item-action'
+              className='container list-group-item list-group-item-action align-content-center text-center'
             >
-              <Link href={rte.path}>
                 <p>
                   {rte.page} (status: {rte.status}):
                 </p>
+              <Link href={rte.path}>
+              {rte.page}
               </Link>
             </div>
           ))}
