@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { API_URL } from '@config/index'
+import { API_URL } from 'configuration/index'
 import Layout from '@layouts/Layuout'
 
 const Sitemap = ({ routes }) => {
