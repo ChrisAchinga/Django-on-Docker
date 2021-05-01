@@ -1,5 +1,14 @@
-import LayoutMain from '@layouts/LayoutMain'
+import Layout from '@layouts/Layout'
+import About from '@components/homePage/About'
+import MemberBenefit from '@components/homePage/MemberBenefit'
+import SectionTitle from '@components/SectionTitle'
 
 export default function Home() {
-  return <LayoutMain title='Home Page'>Swahili pot hub landing page</LayoutMain>
+  return (
+    <Layout title='Home Page'>
+      <About />
+      <SectionTitle title='Member Benefits' />
+      <MemberBenefit />
+    </Layout>
+  )
 }

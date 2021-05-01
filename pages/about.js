@@ -1,5 +1,5 @@
-import LayoutMain from '@layouts/LayoutMain'
+import Layout from '@layouts/Layout'
 
 export default function About() {
-  return <LayoutMain title='About Swahilipot Hub'>Swahili pot hub About page</LayoutMain>
+  return <Layout title='About Swahilipot Hub'>Swahili pot hub About page</Layout>
 }
