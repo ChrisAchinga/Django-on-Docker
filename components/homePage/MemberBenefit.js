@@ -1,50 +1,47 @@
+import { FaRegStar } from 'react-icons/fa'
 import { Col, Row, Container, Card } from 'react-bootstrap'
 
 const MemberBenefit = () => {
   return (
     <Container>
       <Row>
-        <Col sm={3} md={3}>
-          <Card>
+        <Col lg={3} md={4} sm={6} className='mb-4'>
+          <Card className='h-100'>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
+              <Card.Title>
+                <FaRegStar />
+              </Card.Title>
+              <Card.Text>Text</Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm={3} md={3}>
-          <Card>
+        <Col lg={3} md={4} sm={6} className='mb-4'>
+          <Card className='h-100'>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
+              <Card.Title>
+                <FaRegStar />
+              </Card.Title>
+              <Card.Text>Text</Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm={3} md={3}>
-          <Card>
+        <Col lg={3} md={4} sm={6} className='mb-4'>
+          <Card className='h-100'>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
+              <Card.Title>
+                <FaRegStar />
+              </Card.Title>
+              <Card.Text>Text</Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm={3} md={3}>
-          <Card>
+        <Col lg={3} md={4} sm={6} className='mb-4'>
+          <Card className='h-100'>
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
+              <Card.Title>
+                <FaRegStar />
+              </Card.Title>
+              <Card.Text>Text</Card.Text>
             </Card.Body>
           </Card>
         </Col>
