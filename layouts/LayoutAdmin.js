@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import { Row, Col } from 'react-bootstrap'
 import styles from '@styles/admin.module.css'
@@ -5,6 +6,15 @@ import SideBar from '@components/admin/SideBar'
 import TopMenu from '@components/admin/TopMenu'
 
 const LayoutAdmin = ({ children, title }) => {
+  const [date, setDate] = useState(new Date())
+
+  useEffect(() => {
+    const timer = setInterval(() => setDate(new Date()), 1000)
+    return function cleanup() {
+      clearInterval(timer)
+    }
+  })
+
   return (
     <div className={styles.admin}>
       <Head>
@@ -20,6 +30,7 @@ const LayoutAdmin = ({ children, title }) => {
             <main className='ms-sm-auto px-md-4'>
               <div className='d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom'>
                 <h1 className='h2'>{title}</h1>
+                {date.toLocaleTimeString()} | {date.toLocaleDateString()}
                 <div className='btn-toolbar mb-2 mb-md-0'>
                   <div className='btn-group me-2'>
                     <button
