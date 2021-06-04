@@ -3,7 +3,7 @@ import Link from 'next/link'
 const SideBar = () => {
   return (
     <nav id='sidebarMenu' className='d-md-block bg-light sidebar collapse'>
-      <div className='position-sticky pt-3'>
+      <div className='position-sticky position-fixed pt-3'>
         <ul className='nav flex-column'>
           <li className='nav-item'>
             <Link href='/admin'>
