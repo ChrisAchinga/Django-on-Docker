@@ -23,7 +23,7 @@ const LayoutAdmin = ({ children, title }) => {
       <TopMenu />
       <div className='container-fluid'>
         <Row>
-          <Col md={3} lg={2}>
+          <Col md={3} lg={2} className='position-sticky position-fixed'>
             <SideBar />
           </Col>
           <Col md={9} lg={10}>
@@ -55,7 +55,6 @@ const LayoutAdmin = ({ children, title }) => {
                   </button>
                 </div>
               </div>
-
               {children}
             </main>
           </Col>
