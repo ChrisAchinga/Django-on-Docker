@@ -13,7 +13,7 @@ const SideBar = () => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link href='/members'>
+            <Link href='/admin/members'>
               <a className='nav-link' >
                 Members
               </a>
